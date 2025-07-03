@@ -10,7 +10,7 @@ interface ListaProdutosProps {
 }
 
 const ListaProdutos: React.FC<ListaProdutosProps> = ({ filtros }) => {
-  const { produtos, loading, obterNomeCategoria } = useProdutos();
+  const { produtos, loading,  } = useProdutos();
   const [paginaAtual, setPaginaAtual] = useState(1);
   const [produtoSelecionado, setProdutoSelecionado] = useState<Produto | null>(null);
   const produtosPorPagina = 12;

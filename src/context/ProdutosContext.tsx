@@ -50,11 +50,11 @@ export const ProdutosProvider: React.FC<ProdutosProviderProps> = ({ children }) 
 
   const adicionarFavorito = (produto: Produto) => {
     
-    const produtosFavoritosPorCategoria = produto.categorias.map(categoriaId => {
+    /* const produtosFavoritosPorCategoria = produto.categorias.map(categoriaId => {
       return favoritos.filter(fav => 
         fav.produto.categorias.includes(categoriaId)
       ).length;
-    });
+    }); */
 
     produto.categorias.forEach(categoriaId => {
       const favoritosCategoria = favoritos.filter(fav => 
